@@ -1,0 +1,102 @@
+* {
+  font: helvetica;
+  font-family: sans-serif;
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-content {
+  background-color: #fefefe;
+  margin: 10% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  max-width: 300px;
+  text-align: center;
+}
+
+.game {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: lightgray;
+  gap: 16px;
+  display: grid;
+  grid-template-columns: 80px 80px 80px;
+  grid-template-rows: 80px 80px 80px;
+  margin-top: 81px;
+  padding: 32px;
+  border-radius: 32px;
+}
+
+/* numbers  */
+.number {
+  height: 75%;
+  width: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  padding: 10px;
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+  background-color: red;
+  cursor: pointer;
+  border-radius: 60px;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.active {
+  background-color: gold;
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+}
+
+.fake {
+  background-color: black;
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+}
+
+.number:hover {
+  background-color: rgb(190, 0, 0);
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 3px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+}
+
+.number:active {
+  background-color: rgb(190, 0, 0);
+  ;
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 3px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+  color: white;
+  transform: translateY(4px);
+}
+
+.list {
+  text-align: left;
+  margin-bottom: 10px;
+}
+
+#close-button {
+  margin: 10px 0;
+  background-color: blue;
+  color: white;
+  padding: 15px 20px;
+  border-radius: 8px;
+  text-decoration: none;
+  border: 0px;
+  font-weight: bold;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+#message {
+  font-weight: bold;
+}

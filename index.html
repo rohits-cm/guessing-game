@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <link rel="stylesheet" href="style.css">
+ <title>Number Game</title>
+</head>
+
+<body>
+ <div id="modal" class="modal">
+   <div class="modal-content">
+     <h1>Remember!</h1>
+     <button id="close-button">Start</button>
+     <h2>Instructions:</h2>
+     <ul class="list">
+       <li class="list">remember the numbers on which the blue light flashes</li>
+       <li class="list">ignore the numbers on which the pink light flashes. they are just to confuse you</li>
+       <li class="list">enter the blue light numbers in sequence when you are asked to enter the value</li>
+     </ul>
+   </div>
+ </div>
+
+ <div id="game-screen" class="screen">
+   <h1>Number Game</h1>
+   <p id="attempts">Attempts: <span id="attempt">0</span></p>
+   <p id="correct-guesses">Correct Guesses: <span id="correctAttempt">0</span></p>
+   <p id="wrong-guesses">Wrong Guesses: <span id="incorrectAttempt">0</span></p>
+ </div>
+ <div class="game">
+   <div onclick="numberClicked(event.currentTarget)" class="number one">1</div>
+   <div onclick="numberClicked(event.currentTarget)" class="number two">2</div>
+   <div onclick="numberClicked(event.currentTarget)" class="number three">3</div>
+   <div onclick="numberClicked(event.currentTarget)" class="number four">4</div>
+   <div onclick="numberClicked(event.currentTarget)" class="number five">5</div>
+   <div onclick="numberClicked(event.currentTarget)" class="number six">6</div>
+   <div onclick="numberClicked(event.currentTarget)" class="number seven">7</div>
+   <div onclick="numberClicked(event.currentTarget)" class="number eight">8</div>
+   <div onclick="numberClicked(event.currentTarget)" class="number nine">9</div>
+ </div>
+ <div id="message" class="message"></div>
+
+ <script src="script.js"></script>
+</body>
+
+</html>
